@@ -1,0 +1,13 @@
+.header{
+    background-color: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+.profilepicture{
+    border-radius: 100%;
+}
+
+.presentationtext{
+    margin: 0px auto 0px auto;
+}
