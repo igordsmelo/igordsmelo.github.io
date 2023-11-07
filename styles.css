@@ -1,13 +1,52 @@
-.header{
+:root{
+    --bs-gray-800: hsl(0, 0%, 15%);
+    --color2: hsl(0, 0%, 90%);
+    --color1: hsl(0, 0%, 10%);
+}
+
+
+body{
+    text-align: center;
     background-color: red;
+    color: red;
+    background: var(--color2);
+}
+
+
+.card{
+    width: 20rem;
+    margin: 0.5rem;
+}
+
+.color2{
+    color: var(--color2);
+}
+
+
+.header{
+    background-color: var(--color1);
     padding: 0px;
     margin: 0px;
+
 }
 
 .profilepicture{
     border-radius: 100%;
+    height: 15em;
+    margin-bottom: 2em;
 }
 
 .presentationtext{
     margin: 0px auto 0px auto;
+}
+
+.projects{
+    display: inline-block;
+}
+
+.bi, svg{
+    height: 50px;
+    width: 50px;
+    viewBox=2 1 16 16;
+    fill=currentColor;
 }
