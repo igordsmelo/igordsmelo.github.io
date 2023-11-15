@@ -1,7 +1,7 @@
 :root{
     --bs-gray-800: hsl(0, 0%, 15%);
     --color2: hsl(0, 0%, 90%);
-    --color1: hsl(0, 0%, 10%);
+    --color1: hsl(0, 0%, 15%);
 }
 
 
@@ -10,16 +10,33 @@
     max-width: 2em;
     margin: auto .5em auto .5em;
     font-size: 1.7em;
-    color: hsl(0, 0%, 90%);
+    color: var(--color2);
 }
 
 .bi-artstation{
     /* Apply styles to both <i> and <svg> elements */
-    fill: hsl(0, 0%, 90%); /* This will apply to SVGs */
-    width: 25px;
-    height: 50px;
+    fill: var(--color2); /* This will apply to SVGs */
+    width: 1em;
+    height: 2em;
     padding-top: .4em;
 }
+
+.bi-button {
+    /* background-color: red; */
+    border: .1em;
+    border-color: var(--color2);
+    border-radius: .5em;
+    border-style: solid;
+    color: var(--color2);
+    padding: 0.2em 2em 0.4em 2em;
+    text-decoration: none;
+    
+}
+
+.contact-buttons{
+    margin-bottom: 2em;
+}
+
 
 
 body{
@@ -29,6 +46,11 @@ body{
     background: var(--color2);
 }
 
+.btn-primary{
+    fill: var(--color1);
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
 
 .card{
     width: 20rem;
@@ -39,16 +61,24 @@ body{
     color: var(--color2);
 }
 
-
-.header{
-    background-color: var(--color1);
-    padding: 10em auto 1em auto;
-    margin: auto auto 1em auto;
-    height: 40em;
+.font1{
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 h2{
     font-size: 1.5em;
+}
+
+.title{
+    font-size: 5em;
+    color: var(--color1);
+    margin-bottom: 0.5em;
+}
+
+
+
+.header-box{
+    background-color: var(--color1);
 }
 
 p{
@@ -62,10 +92,9 @@ p{
 }
 
 .presentationtext{
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 
-
 .socialmediaicons{
-    margin: 1em auto em auto;
+    margin: 1em;
 }
