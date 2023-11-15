@@ -73,6 +73,7 @@ body{
 .card{
     width: 20rem;
     margin: 0.5rem;
+    overflow: hidden; 
 }
 
 .color2{
@@ -81,16 +82,19 @@ body{
 
 .font1{
     font-family: var(--font1);
+    font-weight: 500;
 }
 
 h2{
     font-size: 1.5em;
 }
 
-.card-img-top{
-    max-height: 8em;
-    max-width: 20em;
-    color: red;
+.project-cover-img{
+    object-fit: cover;
+    height: 10em;
+    /* padding: 1em;
+    margin-bottom: 2em;
+    scale: 2; */
 }
 
 
