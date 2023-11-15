@@ -1,7 +1,20 @@
 :root{
-    --bs-gray-800: hsl(0, 0%, 15%);
     --color2: hsl(0, 0%, 90%);
-    --color1: hsl(0, 0%, 15%);
+    --color1: hsl(0, 0%, 10%);
+    /* --font1: sans-serif; */
+    --font2: 'Helvetica Neue', sans-serif;
+
+    /*bootstrap variables*/
+    --bs-gray-800: var(--color1);
+    --bs-primary-rgb: var(--color1);
+    --bs-btn-hover-color: var(--color1);
+    --bs-btn-hover-bg: var(--color2);
+    --bs-link-hover-color-rgb: var(--color1);
+
+
+
+
+    
 }
 
 
@@ -21,6 +34,7 @@
     padding-top: .4em;
 }
 
+/* e-mail and resume buttons */
 .bi-button {
     /* background-color: red; */
     border: .1em;
@@ -30,7 +44,6 @@
     color: var(--color2);
     padding: 0.2em 2em 0.4em 2em;
     text-decoration: none;
-    
 }
 
 .contact-buttons{
@@ -47,9 +60,14 @@ body{
 }
 
 .btn-primary{
-    fill: var(--color1);
-    background-color: var(--color1);
+    --bs-btn-hover-bg: var(--color1);
+    background-color: var(--color2);
+    border: .1em;
     border-color: var(--color1);
+    color: var(--color1);
+    fill: var(--color1);
+    font-weight: 500;
+    
 }
 
 .card{
@@ -62,12 +80,19 @@ body{
 }
 
 .font1{
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: var(--font1);
 }
 
 h2{
     font-size: 1.5em;
 }
+
+.card-img-top{
+    max-height: 8em;
+    max-width: 20em;
+    color: red;
+}
+
 
 .title{
     font-size: 5em;
@@ -75,10 +100,14 @@ h2{
     margin-bottom: 0.5em;
 }
 
-
-
 .header-box{
     background-color: var(--color1);
+}
+
+.open-project{
+    align-items: center;
+    margin-top: 2em;
+    
 }
 
 p{
@@ -95,6 +124,10 @@ p{
     margin-bottom: 4em;
 }
 
+.projects{
+    margin: auto 1em auto 1em;;
+    justify-content: center;
+}
 
 .socialmediaicons{
     margin: 1em;
