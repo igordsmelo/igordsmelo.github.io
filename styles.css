@@ -31,7 +31,7 @@
     fill: var(--color2); /* This will apply to SVGs */
     width: 1em;
     height: 2em;
-    padding-top: .4em;
+    padding-top: .35em;
 }
 
 /* e-mail and resume buttons */
@@ -39,22 +39,15 @@
     /* background-color: red; */
     border: .1em;
     border-color: var(--color2);
-    border-radius: .5em;
+    border-radius: 1em;
     border-style: solid;
     color: var(--color2);
     padding: 0.2em 2em 0.4em 2em;
     text-decoration: none;
 }
 
-.contact-buttons{
-    margin-bottom: 2em;
-}
-
-
-
 body{
     text-align: center;
-    background-color: red;
     color: red;
     background: var(--color2);
 }
@@ -71,9 +64,12 @@ body{
 }
 
 .card{
-    width: 20rem;
-    margin: 0.5rem;
+    width: 30em;
+    height: min-content; /* inherits height from img */
+    margin: 0.5em;
     overflow: hidden; 
+    color: var(--color2); /* font text */
+    border-radius: 1em;
 }
 
 .color2{
@@ -85,13 +81,23 @@ body{
     font-weight: 500;
 }
 
+h1{
+    font-size: 3.5em;
+}
+
 h2{
     font-size: 1.5em;
+    font-weight: 400;
+}
+
+.container{
+    /* max-width: max-content; */ /**/
 }
 
 .project-cover-img{
     object-fit: cover;
-    height: 10em;
+    height:max-content;
+    /* height: 10em; disable this for every image to have their own size */
     /* padding: 1em;
     margin-bottom: 2em;
     scale: 2; */
@@ -124,15 +130,11 @@ p{
     margin: 3em auto 3em auto;
 }
 
-.presentationtext{
-    margin-bottom: 4em;
+.presentationtext, .socialmediaicons{
+    margin-bottom: 1em;
 }
 
 .projects{
     margin: auto 1em auto 1em;;
     justify-content: center;
-}
-
-.socialmediaicons{
-    margin: 1em;
 }

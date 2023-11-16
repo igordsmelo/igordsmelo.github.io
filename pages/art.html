@@ -9,7 +9,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" href="https://github.com/igordsmelo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="../styles.css"/>
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -25,15 +25,6 @@
 
 
 <div class="header-box">
-    <img class="profilepicture" src="https://github.com/igordsmelo.png" alt="Profile Picture">
-
-    <div class="presentationtext">
-    <h1 class="font1 color2">Hi, I'm Igor 👋🏽</h1>
-    <h2 class="font1 color2 text-white-50">designer, developer, illustrator.</h2>
-    <!-- <p class="color2">I'm passionate about languages, technology, open protocols, podcasts, folk culture and metal music.</p> -->
-    </div>
-    
-
     <div>
       <ul  class="nav justify-content-center nav-pills socialmediaicons ">
       <!-- Mail Button -->
@@ -95,26 +86,26 @@
 
 
   <div>
-    <ul class="nav justify-content-center nav-pills">
+    <ul class="nav justify-content-center nav-pills ">
         <li class="nav-item">
-            <a class="nav-link active" href="index.html">home</a>
+            <a class="nav-link" href="../index.html">home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="pages/art.html">art</a>
+            <a class="nav-link active" href="art.html">art</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">design</a>
+            <a class="nav-link" href="design.html">design</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="#">development</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">about me</a>
+            <a class="nav-link " href="dev.html">development</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="pages/contact.html">contact</a>
+          <a class="nav-link" href="about.html">about me</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">contact</a>
         </li>
         
     </ul>
@@ -148,9 +139,9 @@
 
 
 <div
- class="projects d-flex flex-wrap card-columns"
+ class="projects d-flex flex-wrap card-columns container"
  data-masonry='{"percentPosition": true }'
- > <!-- add container class to div above if needed -->
+ >
     <div class="card">
     <!--TODO: add right src image. -->
     <img class="card-img project-cover-img" src="https://cdna.artstation.com/p/assets/images/images/060/322/536/large/igor-melo-230227-shaded.jpg?1678304435" alt="Card image cap">
@@ -162,37 +153,58 @@
   </div>
 
 
-    <div class="card">
-      <img class="card-img project-cover-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7fb753165544167.6409370dafdff.jpg" alt="Card image cap">
-      <div class="card-img-overlay d-flex flex-column ">
-          <h5 class="card-title">M3</h5>
-          <p class="card-text">Logo for a media studio.</p>
-          <a href="https://www.behance.net/gallery/165544167/M3-Logo" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
-      </div>
+  <div class="card">
+    <!--TODO: add right src image. -->
+    <img class="card-img project-cover-img" src="https://cdna.artstation.com/p/assets/images/images/066/192/028/large/igor-melo-comm-lotus-shaded.jpg?1692279463" alt="Card image cap">
+    <div class="card-img-overlay d-flex flex-column"> <!-- change card-img-overlay to card-box to give it the text -->
+        <h5 class="card-title">lazy day</h5>
+        <p class="card-text">personal illustration.</p>
+        <a href="https://www.artstation.com/artwork/QXP6eL" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
     </div>
+  </div>
 
     <div class="card">
-      <img class="card-img project-cover-img" src="https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png"
+      <img class="card-img project-cover-img" src="https://cdnb.artstation.com/p/assets/images/images/061/564/505/large/igor-melo-sketch-portrait-study-2-render.jpg?1681132232"
            alt="Card image cap">
       <div class="card-img-overlay d-flex flex-column">
           <h5 class="card-title">Strip Exporter</h5>
           <p class="card-text">Blender Add-On to help you export strips of your video quickly.</p>
-          <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
+          <a href="https://www.artstation.com/artwork/w06Wx5" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
       </div>
   </div>
   
   <div class="card">
-      <img class="card-img project-cover-img" src="https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png" alt="Card image cap">
+      <!--TODO: add right src image. -->
+      <img class="card-img project-cover-img" src="https://cdna.artstation.com/p/assets/images/images/067/844/196/large/igor-melo-230921-line.jpg?1696361702" alt="Card image cap">
       <div class="card-img-overlay d-flex flex-column"> <!-- add d-flex and flex-column -->
           <h5 class="card-title">gstr</h5>
           <p class="card-text">Gesture Drawing App, with timers and a simple interface. Built with Kivy.</p>
-          <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
+          <a href="https://www.artstation.com/artwork/w04K4X" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
       </div>
   </div>
     
+  <div class="card">
+    <!--TODO: add right src image. -->
+    <img class="card-img project-cover-img" src="https://cdnb.artstation.com/p/assets/images/images/065/633/301/large/igor-melo-maysketchaday-12-render-2.jpg?1690855796" alt="Card image cap">
+    <div class="card-img-overlay d-flex flex-column"> <!-- add d-flex and flex-column -->
+        <h5 class="card-title">gstr</h5>
+        <p class="card-text">Gesture Drawing App, with timers and a simple interface. Built with Kivy.</p>
+        <a href="https://www.artstation.com/artwork/rJP0ma" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
+    </div>
+    </div>
+
+    <div class="card">
+        <!--TODO: add right src image. -->
+        <img class="card-img project-cover-img" src="https://cdna.artstation.com/p/assets/images/images/040/833/086/medium/igor-silva-final-artstation.jpg?1629995105" alt="Card image cap">
+        <div class="card-img-overlay d-flex flex-column"> <!-- add d-flex and flex-column -->
+            <h5 class="card-title">gstr</h5>
+            <p class="card-text">Gesture Drawing App, with timers and a simple interface. Built with Kivy.</p>
+            <a href="https://www.artstation.com/artwork/lx04m5" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
+    </div>
+
+</div>
 
 
-  
 <!--     
     <div class="card">
         <img class="card-img-top project-cover-img" src="https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png" alt="Card image cap">
