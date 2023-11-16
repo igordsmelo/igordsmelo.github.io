@@ -72,6 +72,12 @@ body{
     border-radius: 1em;
 }
 
+card-img:hover, .project-cover-img:hover{
+    scale: 2;
+    transition-duration: 1.5sec;
+}
+
+
 .color2{
     color: var(--color2);
 }
@@ -95,8 +101,8 @@ h2{
 }
 
 .project-cover-img{
-    object-fit: cover;
-    height:max-content;
+    /* object-fit: cover;
+    height:max-content; */
     /* height: 10em; disable this for every image to have their own size */
     /* padding: 1em;
     margin-bottom: 2em;
@@ -135,6 +141,6 @@ p{
 }
 
 .projects{
-    margin: auto 1em auto 1em;;
+    margin: auto 5em auto 5em;
     justify-content: center;
 }
