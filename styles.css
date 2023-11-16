@@ -2,7 +2,7 @@
     --color2: hsl(0, 0%, 90%);
     --color1: hsl(0, 0%, 10%);
     /* --font1: sans-serif; */
-    --font2: 'Helvetica Neue', sans-serif;
+    --font2: 'DM Serif Display', 'Helvetica Neue', sans-serif;
 
     /*bootstrap variables*/
     --bs-gray-800: var(--color1);
@@ -17,6 +17,10 @@
     
 }
 
+@font-face {
+    font-family: "DM Serif Display";
+    src: url(https://fonts.google.com/specimen/DM+Serif+Display);
+}
 
 .bi{
     max-height: 2em;
@@ -64,8 +68,8 @@ body{
 }
 
 .card{
-    width: 30em;
-    height: min-content; /* inherits height from img */
+    max-width: 24em;
+    max-height: min-content; /* inherits height from img */
     margin: 0.5em;
     overflow: hidden; 
     color: var(--color2); /* font text */
@@ -88,13 +92,15 @@ body{
 .card-title, .card-text, .open-project{
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear
+    transition: visibility 0s, opacity 0.5s linear;
+    font-size:1.5em;
+    text-decoration: none;
 }
 
 .card:hover .card-title, 
 .card:hover .card-text, 
 .card:hover .open-project {
-    visibility: visible;
+    /*visibility: visible; /* makes text visible */
     opacity: 1;
 }
 
@@ -110,6 +116,7 @@ body{
 
 h1{
     font-size: 3.5em;
+    font-family: var(--font2);
 }
 
 h2{
@@ -134,7 +141,7 @@ h2{
 .title{
     font-size: 5em;
     color: var(--color1);
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
 }
 
 
@@ -146,7 +153,7 @@ h2{
     align-items: center;
     margin-top: auto;
     position:sticky;
-    bottom: -2em;
+    bottom: 1em;
     
 }
 
@@ -165,12 +172,11 @@ p{
 }
 
 .projects{
-    margin: auto 5em auto 5em;
+    /* margin: auto 5em auto 5em; */
     justify-content: center;
     display: flex;
     align-items: center;
     /* left: 5em; */
-    padding: 5em
 }
 
 .unselectable {
