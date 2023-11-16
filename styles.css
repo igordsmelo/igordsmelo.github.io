@@ -70,12 +70,22 @@ body{
     overflow: hidden; 
     color: var(--color2); /* font text */
     border-radius: 1em;
+    
 }
 
-card-img:hover, .project-cover-img:hover{
-    scale: 2;
-    transition-duration: 1.5sec;
+/* HOVER EFFECT */
+.card .project-cover-img{
+    transition: transform 0.2s ease, filter 0.2s ease
 }
+
+/* HOVER EFFECT */
+.card:hover .project-cover-img{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    filter: blur(0.02em);
+    filter: brightness(90%);
+}
+
 
 
 .color2{
@@ -143,4 +153,8 @@ p{
 .projects{
     margin: auto 5em auto 5em;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    /* left: 5em; */
+    padding: 5em
 }
