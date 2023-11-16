@@ -35,8 +35,8 @@
     <img class="profilepicture" src="https://github.com/igordsmelo.png" alt="Profile Picture">
 
     <div class="presentationtext">
-    <h1 class="font1 color2">Hi, I'm Igor 👋🏽</h1>
-    <h2 class="text-secondary">designer, developer, illustrator.</h2>
+    <h1 class="font1 color2 unselectable">Hi, I'm Igor 👋🏽</h1>
+    <h2 class="text-secondary unselectable">designer, developer, illustrator.</h2>
     <!-- <p class="color2">I'm passionate about languages, technology, open protocols, podcasts, folk culture and metal music.</p> -->
     </div>
     
@@ -77,14 +77,9 @@
       </li>
      
       <!-- Mastodon Button -->
-      <!-- <li class="nav-item nav-item--archive">
-        <a rel="me" href="https://mastodon.social/@igordsmelo" target="_blank"><i class="bi bi-mastodon"></i></a>
-      </li> -->
-
-      <!-- TikTok Button -->
-      <!-- <li class="nav-item nav-item--archive">
-        <a href="https://www.tiktok.com/@igordsmelo" target="_blank"><i class="bi bi-tiktok"></i></a>
-      </li> -->
+      <li class="nav-item nav-item--archive">
+        <a href="https://mastodon.social/@igordsmelo" rel="me" target="_blank"><i class="bi bi-mastodon"></i></a>
+      </li>
 
       <!-- Twitter Button -->
       <!-- <li class="nav-item nav-item--archive">
@@ -101,8 +96,8 @@
 
 
 
-  <div>
-    <ul class="nav justify-content-center nav-pills">
+  <div> <!-- KEEP IT HIDDEN UNTIL OTHER PAGES ARE SET UP-->
+    <ul class="nav justify-content-center visually-hidden">
         <li class="nav-item">
             <a class="nav-link active" href="index.html">home</a>
         </li>
@@ -132,7 +127,7 @@
 
 
 
-<h3 class="title font"> Projects </h3>
+<h3 class="title font unselectable"> Projects </h3>
 
 <!--TODO: Implement list, after adding filters to only show cards with a certain class.-->
 <!-- <div>
@@ -162,9 +157,9 @@
     <!--TODO: add right src image. -->
     <img class="card-img project-cover-img" src="https://cdna.artstation.com/p/assets/images/images/060/322/536/large/igor-melo-230227-shaded.jpg?1678304435" alt="Card image cap">
     <a class="card-img-overlay d-flex flex-column" href="https://www.artstation.com/artwork/Ry3mar" target="_blank" > <!-- change card-img-overlay to card-box to give it the text -->
-        <h5 class="card-title visually-hidden">lazy day</h5>
-        <p class="card-text visually-hidden">personal illustration.</p>
-        <!-- <a href="https://www.artstation.com/artwork/Ry3mar" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a> -->
+        <h5 class="card-title">lazy day</h5>
+        <p class="card-text">personal illustration.</p>
+        <a href="https://www.artstation.com/artwork/Ry3mar" target="_blank" class="btn btn-primary open-project mt-auto sticky-md-top">Open on Artstation</a>
     </a>
   </div>
 
@@ -172,9 +167,9 @@
     <div class="card">
       <img class="card-img project-cover-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7fb753165544167.6409370dafdff.jpg" alt="Card image cap">
       <a class="card-img-overlay d-flex flex-column"  href="https://www.behance.net/gallery/165544167/M3-Logo" target="_blank" >
-          <h5 class="card-title visually-hidden">M3</h5>
-          <p class="card-text visually-hidden">Logo for a media studio.</p>
-          <!-- <a href="https://www.behance.net/gallery/165544167/M3-Logo" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a> -->
+          <h5 class="card-title">M3</h5>
+          <p class="card-text">Logo for a media studio.</p>
+          <a href="https://www.behance.net/gallery/165544167/M3-Logo" target="_blank" class="btn btn-primary open-project mt-auto">Open on Behance</a>
       </a>
     </div>
 
@@ -182,18 +177,18 @@
       <img class="card-img project-cover-img" src="https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png"
            alt="Card image cap">
       <a class="card-img-overlay d-flex flex-column"  href="https://github.com/igordsmelo/blender-strip-exporter" target="_blank" >
-          <h5 class="card-title visually-hidden">Strip Exporter</h5>
-          <p class="card-text visually-hidden">Blender Add-On to help you export strips of your video quickly.</p>
-          <!-- <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a> -->
+          <h5 class="card-title">Strip Exporter</h5>
+          <p class="card-text">Blender Add-On to help you export strips of your video quickly.</p>
+          <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Open on Github</a>
       </a>
   </div>
   
-  <div class="card">
+  <div class="card visually-hidden">
       <img class="card-img project-cover-img" src="https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png" alt="Card image cap">
       <a class="card-img-overlay d-flex flex-column"> <!-- add d-flex and flex-column -->
-          <h5 class="card-title visually-hidden">gstr</h5>
-          <p class="card-text visually-hidden">Gesture Drawing App, with timers and a simple interface. Built with Kivy.</p>
-          <!-- <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a> -->
+          <h5 class="card-title">gstr</h5>
+          <p class="card-text">Gesture Drawing App, with timers and a simple interface. Built with Kivy.</p>
+          <a href="#" target="_blank" class="btn btn-primary open-project mt-auto">Check Project</a>
       </a>
   </div>
     
@@ -231,8 +226,10 @@
   
   -->
 </div>
-<div class="header-box">
-  <p>TEEEEEEEEEEEST</p>
+<div class="container">
+  <footer class="py-3 my-4">
+    <p class="text-center text-muted">© 2023</p>
+  </footer>
 </div>
 
 </body>
