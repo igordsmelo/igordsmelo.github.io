@@ -14,14 +14,14 @@ fetch('src/posts.json')
       // Create an img element
       var img = document.createElement('img');
       img.className = 'card-img project-cover-img';
-      img.src = data[i].src;
+      img.src = data[i].cover;
       img.alt = 'Card image cap';
       div.appendChild(img);
 
       // Create an a element
       var a = document.createElement('a');
       a.className = 'card-img-overlay d-flex flex-column';
-      a.href = data[i].href;
+      a.href = data[i].link;
       a.target = '_blank';
       div.appendChild(a);
 
@@ -34,7 +34,7 @@ fetch('src/posts.json')
       // Create a p element
       var p = document.createElement('p');
       p.className = 'card-text';
-      p.textContent = data[i].text;
+      p.textContent = data[i].description;
       a.appendChild(p);
 
       // Append the div to the container
