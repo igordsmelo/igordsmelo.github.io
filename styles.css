@@ -3,6 +3,7 @@
     --color1: hsl(0, 0%, 10%);
     /* --font1: sans-serif; */
     --font2: 'DM Serif Display', 'Helvetica Neue', sans-serif;
+    --font1: "DM Serif Display";
 
     /*bootstrap variables*/
     --bs-gray-800: var(--color1);
@@ -11,10 +12,6 @@
     --bs-btn-hover-bg: var(--color2);
     --bs-link-hover-color-rgb: var(--color1);
     --bs-btn-active-bg: var(--color1);
-
-
-
-    
 }
 
 @font-face {
@@ -35,12 +32,11 @@
     fill: var(--color2); /* This will apply to SVGs */
     width: 1em;
     height: 2em;
-    padding-top: .35em;
+    padding-top: .30em;
 }
 
 /* e-mail and resume buttons */
 .bi-button {
-    /* background-color: red; */
     border: .1em;
     border-color: var(--color2);
     border-radius: 1em;
@@ -64,7 +60,6 @@ body{
     color: var(--color1);
     fill: var(--color1);
     font-weight: 500;
-    
 }
 
 .card{
@@ -91,7 +86,6 @@ body{
 
 .card-title, .card-text, .open-project{
     visibility: hidden;
-    opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
     font-size:1.5em;
     text-decoration: none;
@@ -124,27 +118,6 @@ h2{
     font-weight: 400;
 }
 
-.container{
-    /* max-width: max-content; */ /**/
-}
-
-.project-cover-img{
-    /* object-fit: cover;
-    height:max-content; */
-    /* height: 10em; disable this for every image to have their own size */
-    /* padding: 1em;
-    margin-bottom: 2em;
-    scale: 2; */
-}
-
-
-.title{
-    font-size: 5em;
-    color: var(--color1);
-    /* margin-bottom: 0.5em; */
-}
-
-
 .header-box{
     background-color: var(--color1);
 }
@@ -154,7 +127,6 @@ h2{
     margin-top: auto;
     position:sticky;
     bottom: 1em;
-    
 }
 
 p{
@@ -172,14 +144,16 @@ p{
 }
 
 .projects{
-    /* margin: auto 5em auto 5em; */
     justify-content: center;
-    /* display: flex; */
     align-items: center;
-    /* left: 5em; */
-    padding: 10em auto !important ;
+    padding: 10em auto;
     place-items: center;
     display: grid;
+}
+
+.title{
+    font-size: 5em;
+    color: var(--color1);
 }
 
 .unselectable {

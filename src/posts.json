@@ -22,6 +22,36 @@
         "href": "https://www.behance.net/gallery/90190859/Manual-de-Identidade-Visual-Tata",
         "card-title": "Title 3",
         "card-text": "This is the text for card 3."
+    },
+    {
+        "src": "https://cdna.artstation.com/p/assets/images/images/060/322/536/large/igor-melo-230227-shaded.jpg?1678304435",
+        "href": "https://www.artstation.com/artwork/Ry3mar",
+        "card-title": "lazy day",
+        "card-text": "personal illustration"
+    },
+    {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7fb753165544167.6409370dafdff.jpg",
+        "href": "https://www.behance.net/gallery/165544167/M3-Logo",
+        "card-title": "M3",
+        "card-text": "Logo for a media studio."
+    },
+    {
+        "src": "https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png",
+        "href": "https://github.com/igordsmelo/blender-strip-exporter",
+        "card-title": "Strip Exporter",
+        "card-text": "Blender Add-On to help you export strips of your video quickly."
+    },
+    {
+        "src": "https://cdnb.artstation.com/p/assets/images/images/048/342/013/large/igor-melo-illustration8-monk-render-final-5.jpg?1649795886",
+        "href": "https://www.artstation.com/artwork/JekBk0",
+        "card-title": "monk",
+        "card-text": "personal illustration."
+    },
+    {
+        "src": "https://mir-s3-cdn-cf.behance.net/projects/808/c1e3b3165544023.Y3JvcCwxMDYxLDgzMCwxNjUsNzg.png",
+        "href": "https://www.behance.net/gallery/165544023/Hummingbird",
+        "card-title": "humming bird",
+        "card-text": "logo"
     }
 ]
 
