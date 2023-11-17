@@ -174,9 +174,12 @@ p{
 .projects{
     /* margin: auto 5em auto 5em; */
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     /* left: 5em; */
+    padding: 10em auto !important ;
+    place-items: center;
+    display: grid;
 }
 
 .unselectable {
