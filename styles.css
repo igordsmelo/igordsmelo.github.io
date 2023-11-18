@@ -2,7 +2,7 @@
     --color2: hsl(0, 0%, 90%);
     --color1: hsl(0, 0%, 10%);
     /* --font1: sans-serif; */
-    --font2: 'DM Serif Display', 'Helvetica Neue', sans-serif;
+    --font2: 'DM Serif Display', 'Helvetica Neue';
     --font1: "DM Serif Display";
 
     /*bootstrap variables*/
@@ -13,6 +13,7 @@
     --bs-link-hover-color-rgb: var(--color1);
     --bs-btn-active-bg: var(--color1);
     --bs-link-color: var(--color2);
+    --bs-body-bg: var(--color2);
     /* NOT WORKING */
     /* --bs-black-rgb: var(var(--color1));
     --bs-white-rgb: var(var(--color)); */
@@ -23,6 +24,7 @@
     src: url(https://fonts.google.com/specimen/DM+Serif+Display);
 }
 
+/* icons */
 .bi{
     max-height: 2em;
     max-width: 2em;
@@ -43,27 +45,71 @@
 .bi-button {
     border: .1em;
     border-color: var(--color2);
-    border-radius: 1em;
     border-style: solid;
-    color: var(--color2);
+    color: var(--color2); 
     padding: 0.2em 2em 0.4em 2em;
     text-decoration: none;
 }
 
 body{
-    text-align: center;
-    color: red;
-    background: var(--color2);
+    /* text-align: center; */
+    color: var(--color1);
 }
 
 .card{
-    max-width: 24em;
-    max-height: min-content; /* inherits height from img */
-    margin: 0.5em;
-    overflow: hidden; 
-    color: var(--color2); /* font text */
+    width: 30%;
+    
+    max-height: auto; /* inherits height from img */
+    margin: 0.5em; 
+    overflow: hidden; /* keeps border in check */
     border-radius: 1em;
 }
+
+.projects{
+    justify-content: space-around;
+    box-sizing: border-box;
+    left: 5%;
+    width: 95%;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+      width: 95%;
+    }
+    .projects{
+        width:90%;
+    }
+  }
+
+@media only screen and (min-width:600px) and (max-width: 1280px) {
+.card {
+    width: 45%;
+}
+.projects{
+    width:90%;
+}
+}
+
+@media only screen and (min-width:1280px) and (max-width: 1400px) {
+    .card {
+        width: 30%;
+    }
+    .projects{
+        width:90%;
+}
+}
+
+@media only screen and (min-width:1400px) {
+    .card {
+        width: 30em;
+    }
+    .projects{
+        width:90%;
+}
+}
+
+
+
 
 /* HOVER EFFECT */
 .card .project-cover-img{
@@ -92,16 +138,6 @@ body{
     opacity: 1;
 }
 
-
-.color2{
-    color: var(--color2);
-}
-
-.font1{
-    font-family: var(--font1);
-    font-weight: 500;
-}
-
 h1{
     font-size: 3.5em;
     font-family: var(--font2);
@@ -112,28 +148,8 @@ h2{
     font-weight: 400;
 }
 
-.header-box{
-    background-color: var(--color1);
-}
-
-.open-project{
-    align-items: center;
-    margin-top: auto;
-    position:sticky;
-    bottom: 1em;
-}
-
-.projects{
-    justify-content: center;
-    align-items: center;
-    padding: 10em auto;
-    place-items: center;
-    display: grid;
-}
-
 .title{
     font-size: 5em;
-    color: var(--color1);
 }
 
 .unselectable {
