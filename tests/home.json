@@ -1,0 +1,63 @@
+[
+  {
+    "cover": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/7fb753165544167.6409370dafdff.jpg",
+    "link": "https://www.behance.net/gallery/165544167/M3-Logo",
+    "title": "M3",
+    "description": "Logo for a media studio."
+  },
+  {
+    "cover": "https://mir-s3-cdn-cf.behance.net/projects/404/855dc386902347.Y3JvcCw0MDQsMzE2LDc2MiwzNjE.png",
+    "link": "https://www.behance.net/gallery/86902347/Catalogo-Modernismo-no-Brasil",
+    "title": "Title 1",
+    "description": "This is the description for card 1."
+  },
+  {
+    "cover": "https://cdnb.artstation.com/p/assets/images/images/048/953/643/large/igor-melo-dnd-project-ninja-goblin-final.jpg?1651339218",
+    "link": "https://www.artstation.com/artwork/d0rR3e",
+    "title": "Title 2",
+    "description": "This is the description for card 2."
+  },
+  {
+    "cover": "https://cdna.artstation.com/p/assets/images/images/067/975/788/large/igor-melo-231004-line.jpg?1696682466",
+    "link": "https://www.artstation.com/artwork/BXQ8o4",
+    "title": "Title 3",
+    "description": "This is the description for card 3."
+  },
+  {
+    "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/278afe90190859.Y3JvcCw5NjMsNzUzLDcxNywzMjE.png",
+    "link": "https://www.behance.net/gallery/90190859/Manual-de-Identidade-Visual-Tata",
+    "title": "Title 3",
+    "description": "This is the description for card 3."
+  },
+  {
+    "cover": "https://cdna.artstation.com/p/assets/images/images/060/322/536/20230308134034/smaller_square/igor-melo-230227-shaded.jpg?1678304435",
+    "link": "https://www.artstation.com/artwork/Ry3mar",
+    "title": "lazy day",
+    "description": "personal illustration"
+  },
+  {
+    "cover": "https://raw.githubusercontent.com/igordsmelo/blender-strip-exporter/main/img.png",
+    "link": "https://github.com/igordsmelo/blender-strip-exporter",
+    "title": "Strip Exporter",
+    "description": "Blender Add-On to help you export strips of your video quickly."
+  },
+  {
+    "cover": "https://cdnb.artstation.com/p/assets/images/images/048/342/013/large/igor-melo-illustration8-monk-render-final-5.jpg?1649795886",
+    "link": "https://www.artstation.com/artwork/JekBk0",
+    "title": "monk",
+    "description": "personal illustration."
+  },
+  {
+    "cover": "https://mir-s3-cdn-cf.behance.net/projects/808/c1e3b3165544023.Y3JvcCwxMDYxLDgzMCwxNjUsNzg.png",
+    "link": "https://www.behance.net/gallery/165544023/Hummingbird",
+    "title": "humming bird",
+    "description": "logo"
+  },
+  {
+    "cover": "https://cdnb.artstation.com/p/assets/covers/images/066/192/145/smaller_square/igor-melo-igor-melo-cover.jpg",
+    "link": "https://www.artstation.com/artwork/QXP6eL",
+    "title": "humming bird",
+    "description": "logo"
+  }
+]
+
