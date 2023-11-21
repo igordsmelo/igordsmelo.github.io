@@ -1,11 +1,17 @@
 :root{
     --color2: hsl(0, 0%, 90%);
+    --color2b: hsl(0, 0%, 85%);
     --color1: hsl(0, 0%, 10%);
+    --color3: red;
+    
     /* --font1: sans-serif; */
     --font2: 'DM Serif Display', 'Helvetica Neue';
     --font1: "DM Serif Display";
 
     /*bootstrap variables*/
+    --bs-black-rgb: 26,26,26;
+    --bs-white-rgb: 230, 230, 230;
+    --bs-nav-link-color: var(--color2)
     --bs-gray-800: var(--color1);
     --bs-primary-rgb: var(--color1);
     --bs-btn-hover-color: var(--color1);
@@ -14,6 +20,8 @@
     --bs-btn-active-bg: var(--color1);
     --bs-link-color: var(--color2);
     --bs-body-bg: var(--color2);
+    --bs-nav-pills-link-active-bg: var(--color3);
+    --bs-link-hover-color: var(--color3);
     /* NOT WORKING */
     /* --bs-black-rgb: var(var(--color1));
     --bs-white-rgb: var(var(--color)); */
@@ -31,6 +39,13 @@
     margin: auto .5em auto .5em;
     font-size: 1.7em;
     color: var(--color2);
+}
+
+
+.bi:hover{
+    color: var(--color3);
+    fill: var(--color3);
+    transition-duration: 0.25s;
 }
 
 .bi-artstation{
@@ -65,12 +80,6 @@ body{
     border-radius: 1em;
 }
 
-.projects{
-    justify-content: space-around;
-    box-sizing: border-box;
-    left: 5%;
-    width: 95%;
-}
 
 @media only screen and (max-width: 600px) {
     .card {
@@ -107,9 +116,6 @@ body{
         width:90%;
 }
 }
-
-
-
 
 /* HOVER EFFECT */
 .card .project-cover-img{
@@ -148,6 +154,13 @@ h2{
     font-weight: 400;
 }
 
+.projects{
+    justify-content: space-around;
+    box-sizing: border-box;
+    left: 5%;
+    width: 95%;
+}
+
 .title{
     font-size: 5em;
 }
@@ -159,4 +172,22 @@ h2{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+zero-md{
+    /* fill:black; */
+    background-color: var(--color2b);
+    border-color: var(--color2b);
+    border-width: 0.1em;
+    border-style: solid;
+    font: inherit;
+    border-radius: 1em;
+    margin: 1em;
+    text-align: left;
+    width: fit-content;
+    padding: 2em;
+}
+
+zero-md:hover{
+    background-color: red;
 }
