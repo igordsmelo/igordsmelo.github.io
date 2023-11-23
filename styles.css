@@ -2,7 +2,7 @@
     --color2: hsl(0, 0%, 90%);
     --color2b: hsl(0, 0%, 85%);
     --color1: hsl(0, 0%, 10%);
-    --color3: red;
+    --color3: #0d6efd; /* move it back to red or something alike */
     
     /* --font1: sans-serif; */
     --font2: 'DM Serif Display', 'Helvetica Neue';
@@ -11,7 +11,7 @@
     /*bootstrap variables*/
     --bs-black-rgb: 26,26,26;
     --bs-white-rgb: 230, 230, 230;
-    --bs-nav-link-color: var(--color2)
+    --bs-nav-link-color: var(--color2);
     --bs-gray-800: var(--color1);
     --bs-primary-rgb: var(--color1);
     --bs-btn-hover-color: var(--color1);
@@ -21,6 +21,7 @@
     --bs-link-color: var(--color2);
     --bs-body-bg: var(--color2);
     --bs-nav-pills-link-active-bg: var(--color3);
+    
     --bs-link-hover-color: var(--color3);
     /* NOT WORKING */
     /* --bs-black-rgb: var(var(--color1));
@@ -66,14 +67,8 @@
     text-decoration: none;
 }
 
-body{
-    /* text-align: center; */
-    color: var(--color1);
-}
-
 .card{
     width: 30%;
-    
     max-height: auto; /* inherits height from img */
     margin: 0.5em; 
     overflow: hidden; /* keeps border in check */
