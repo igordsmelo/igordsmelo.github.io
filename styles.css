@@ -159,6 +159,8 @@ h2{
     box-sizing: border-box;
     left: 5%;
     width: 95%;
+    padding-top: 1em;
+    flex-wrap: wrap;
 }
 
 .title{
@@ -172,22 +174,4 @@ h2{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-zero-md{
-    /* fill:black; */
-    background-color: var(--color2b);
-    border-color: var(--color2b);
-    border-width: 0.1em;
-    border-style: solid;
-    font: inherit;
-    border-radius: 1em;
-    margin: 1em;
-    text-align: left;
-    width: fit-content;
-    padding: 2em;
-}
-
-zero-md:hover{
-    background-color: red;
 }

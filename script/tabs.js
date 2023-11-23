@@ -1,17 +1,29 @@
 $(document).ready(function(){
-    $("#pills-home").load("pages/home.html", function() {
+    $("#tabs-home").load("pages/home.html", function() {
         setTimeout(masonry, 1); // Call your function here
     });
-    $("#pills-art").load("pages/art.html", function() {
+    $("#tabs-art").load("pages/art.html", function() {
       portfolioFiles("data/pages.json", 'art');
     });
-    $("#pills-design").load("pages/design.html", function() {
+    $("#tabs-design").load("pages/design.html", function() {
       portfolioFiles("data/pages.json", 'design');
     });
-    $("#pills-dev").load("pages/dev.html", function() {
+    $("#tabs-dev").load("pages/dev.html", function() {
       portfolioFiles("data/pages.json", 'dev');
     });
-    $("#pills-contact").load("pages/contact.html", function() {
+    $("#tabs-contact").load("pages/contact.html", function() {
+      portfolioFiles("data/pages.json", 'contact');
+    });
+    $("#tab-art").load("pages/test.html", function() {
+      portfolioFiles("data/pages.json", 'art');
+    });
+    $("#tab-design").load("pages/test.html", function() {
+      portfolioFiles("data/pages.json", 'design');
+    });
+    $("#tab-dev").load("pages/test.html", function() {
+      portfolioFiles("data/pages.json", 'dev');
+    });
+    $("#tab-contact").load("pages/test.html", function() {
       portfolioFiles("data/pages.json", 'contact');
     });
 });
