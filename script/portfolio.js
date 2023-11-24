@@ -16,14 +16,14 @@ function portfolioFiles(jsonPath, key) {
 
         // Create an img element
         var img = document.createElement('img');
-        img.className = 'card-img project-cover-img';
+        img.className = 'card-img';
         img.src = projects[i].cover;
         img.alt = 'Card image cap';
         div.appendChild(img);
 
         // Create an a element
         var a = document.createElement('a');
-        a.className = 'card-img-overlay d-flex flex-column';
+        a.className = 'card-img-overlay';
         a.href = projects[i].link;
         a.target = '_blank';
         div.appendChild(a);
