@@ -125,6 +125,19 @@
     opacity: 1;
 }
 
+.contact{
+    max-width: 120em;
+    min-width: 24em;
+    margin: auto 5em auto 5em;
+}
+
+.contact .presentation{
+    max-width: 60em;
+    min-width: 20em;
+    text-align: left;
+}
+
+
 h1{
     font-size: 3.5em;
     font-family: var(--font2);
@@ -147,6 +160,8 @@ h2{
     color: var(--color2) !important;
     font-weight: bold;
 }
+
+
 
 .projects{
     margin: auto 5% auto 5%;
