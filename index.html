@@ -19,16 +19,16 @@
         <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
     </head>
 
-    <body onload="masonry()" onclick="masonry()" onscroll="masonry()" class="unselectable text-center">
+    <body onload="masonry()" onclick="masonry()" onscroll="masonry()" onloadstart="masonry()" class="unselectable text-center">
         <!-- Mastodon veritification -->
         <div class="visually-hidden"><a rel="me" href="https://mastodon.social/@igordsmelo">Mastodon</a></div>
 
         <div class="bg-black">
             <!-- round portrait pic, margin: 5-->
-            <img class="rounded-circle m-5" src="https://github.com/igordsmelo.png" alt="Profile Picture">
+            <img class="rounded-circle" src="https://github.com/igordsmelo.png" alt="Profile Picture">
             <!-- padding-bottom: 4-->
             <div">
-                <h1 class="text-white">Hi, I'm Igor 👋🏽</h1>
+                <h1 class="text-white display-1">Hi, I'm Igor 👋🏽</h1>
                 <h2 class="text-secondary">designer, developer, illustrator.</h2>
                 
             <ul class="nav justify-content-center nav-pills pt-2">
@@ -52,14 +52,10 @@
         <nav class="nav pb-3 pt-2  justify-content-center bg-black" id="tabs-tab" role="tablist">
             <button class="nav-link text-secondary active" data-bs-toggle="pill" data-bs-target="#tabs-home" aria-selected="true">home</button>
             <button class="nav-link text-secondary " data-bs-toggle="pill" data-bs-target="#tabs-art" aria-selected="false">portfolio</button>
-            <!-- <button class="nav-link visually-hidden" data-bs-toggle="pill" data-bs-target="#tabs-art" aria-selected="false">art</button>
-            <button class="nav-link visually-hidden" data-bs-toggle="pill" data-bs-target="#tabs-design" aria-selected="false">design</button>
-            <button class="nav-link visually-hidden" data-bs-toggle="pill" data-bs-target="#tabs-dev" aria-selected="false">dev</button>
-             -->
             <button class="nav-link text-secondary " data-bs-toggle="pill" data-bs-target="#tabs-contact" aria-selected="false">about</button>
         </nav>
 
-        <div class="tab-content" id="tabs-tabContent">
+        <div class="tab-content " id="tabs-tabContent">
             <div class="tab-pane fade show active" id="tabs-home"></div>
             <div class="tab-pane fade" id="tabs-art"></div>
             <div class="tab-pane fade" id="tabs-design"></div>
