@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#tabs-home").load("pages/home.html", function() {
+    $("#tabs-home").load("pages/contact.html", function() {
         setTimeout(masonry, 1); // Call your function here
     });
     $("#tabs-art").load("pages/portfolio.html", function() {
