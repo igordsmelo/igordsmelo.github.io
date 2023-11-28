@@ -1,8 +1,8 @@
 :root{
-    --color2: hsl(0, 0%, 90%);
-    --color2b: hsl(0, 0%, 85%);
     --color1: hsl(0, 0%, 10%);
     --color1b: hsl(0, 0%, 20%);
+    --color2: hsl(0, 0%, 90%);
+    --color2b: hsl(0, 0%, 85%);
     --color3: red;
 
     /*bootstrap variables*/
@@ -12,46 +12,19 @@
     --bs-btn-hover-bg: var(--color2);
     --bs-btn-hover-color: var(--color1);
     --bs-gray-800: var(--color1);
-    --bs-primary-rgb: var(--color1);
-    --bs-white-rgb: 230, 230, 230;
     --bs-light-bg-subtle: var(--color2b);
     --bs-link-hover-color: var(--color3);
     --bs-link-hover-color-rgb: var(--color1);    
     --bs-link-color: var(--color2);
     --bs-nav-link-color: var(--color2);
     --bs-nav-pills-link-active-bg: var(--color3);
+    --bs-primary-rgb: var(--color1);
+    --bs-white-rgb: 230, 230, 230;
 }
-
-/* icons */
-.bi{
-    max-height: 2em;
-    max-width: 2em;
-    margin: auto .5em auto .5em;
-    font-size: 1.7em;
-    color: var(--color2);
-}
-
-.bi-artstation{
-    /* Apply styles to both <i> and <svg> elements */
-    fill: var(--color2); /* This will apply to SVGs */
-    width: 1em;
-    height: 2em;
-    padding-top: .30em;
-}
-
-.card{
-    width: 30%;
-    max-width: 100%;
-    max-height: auto; /* inherits height from img */
-    margin: 0.5em; 
-    overflow: hidden; /* keeps border in check */
-    border-radius: 1em;
-}
-
 
 @media only screen and (max-width: 600px) {
     .card {
-      width: 95%;
+        width: 95%;
     }
     .projects{
         width:90%;
@@ -59,12 +32,12 @@
   }
 
 @media only screen and (min-width:600px) and (max-width: 1280px) {
-.card {
-    width: 45%;
-}
-.projects{
-    width:90%;
-}
+    .card {
+        width: 45%;
+    }
+    .projects{
+        width:90%;
+    }
 }
 
 @media only screen and (min-width:1280px) and (max-width: 1400px) {
@@ -73,17 +46,43 @@
     }
     .projects{
         width:90%;
-}
+    }
 }
 
 @media only screen and (min-width:1400px) {
     .card {
-        min-width: 20em;
         max-width: 30em;
+        min-width: 20em;
     }
     .projects{
         width:90%;
+    }
 }
+
+/* icons */
+.bi{
+    color: var(--color2);
+    font-size: 1.7em;
+    margin: auto .5em auto .5em;
+    max-height: 2em;
+    max-width: 2em;
+}
+
+.bi-artstation{
+    /* Apply styles to both <i> and <svg> elements */
+    fill: var(--color2); /* This will apply to SVGs */
+    height: 2em;
+    padding-top: .30em;
+    width: 1em;
+}
+
+.card{
+    border-radius: 1em;
+    max-width: 100%;
+    max-height: auto; /* inherits height from img */
+    margin: 0.5em; 
+    overflow: hidden; /* keeps border in check */
+    width: 30%;
 }
 
 /* HOVER EFFECT */
@@ -93,17 +92,18 @@
 
 /* HOVER EFFECT */
 .card:hover .card-img{
-    transform: scale(1.1);
-    transition-duration: 0.2s;
     filter: blur(0.5em);
     filter: brightness(90%);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    
 }
 
 .card-title, .card-text, .open-project{
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s linear;
     font-size:1.5em;
     text-decoration: none;
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden;
 }
 
 .card:hover .card-title, 
@@ -125,10 +125,9 @@
     text-align: left;
 }
 
-
 h1{
-    font-size: 3.5em;
     font-family: var(--font2);
+    font-size: 3.5em;
 }
 
 h2{
@@ -136,12 +135,11 @@ h2{
     font-weight: 400;
 }
 
-
 .nav-pills .nav-link.active{
+    background-color: var(--color2); /* removes pill thing */
+    border-radius: 0.2em;
     color: var(--color1) !important;
     font-weight: bold;
-	background-color: var(--color2); /* removes pill thing */
-    border-radius: 0.2em;
 }
 
 .text-secondary.active{
@@ -149,21 +147,19 @@ h2{
     font-weight: bold;
 }
 
-
 .projects{
+    justify-content: space-around;
     left: 8%;
     right: 10%;
     margin: auto 30% auto 5%;
     width: 80%;
-    justify-content: space-around;
 }
 
-
 .unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
     user-select: none;
 }
