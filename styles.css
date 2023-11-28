@@ -22,43 +22,6 @@
     --bs-white-rgb: 230, 230, 230;
 }
 
-@media only screen and (max-width: 600px) {
-    .card {
-        width: 95%;
-    }
-    .projects{
-        width:90%;
-    }
-  }
-
-@media only screen and (min-width:600px) and (max-width: 1280px) {
-    .card {
-        width: 45%;
-    }
-    .projects{
-        width:90%;
-    }
-}
-
-@media only screen and (min-width:1280px) and (max-width: 1400px) {
-    .card {
-        width: 30%;
-    }
-    .projects{
-        width:90%;
-    }
-}
-
-@media only screen and (min-width:1400px) {
-    .card {
-        max-width: 30em;
-        min-width: 20em;
-    }
-    .projects{
-        width:90%;
-    }
-}
-
 /* icons */
 .bi{
     color: var(--color2);
@@ -147,12 +110,10 @@ h2{
     font-weight: bold;
 }
 
-.projects{
+/* fix masory alignment */
+.projects{ 
     justify-content: space-around;
-    left: 8%;
-    right: 10%;
     margin: auto 30% auto 5%;
-    width: 80%;
 }
 
 .unselectable {
@@ -162,4 +123,42 @@ h2{
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 95%;
+    }
+    .projects{
+        width:90%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 1280px) {
+    .card {
+        width: 45%;
+    }
+    .projects{
+        width:90%;
+    }
+}
+
+@media only screen and (min-width:1280px) and (max-width: 1400px) {
+    .card {
+        width: 30%;
+    }
+    .projects{
+        width:90%;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .card {
+        max-width: 30em;
+        min-width: 20em;
+    }
+    .projects{
+        width:90%;
+    }
 }
