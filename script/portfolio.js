@@ -12,7 +12,7 @@ function portfolioFiles(jsonPath, key) {
       for (var i = 0; i < projects.length; i++) {
         // Create a new div element
         var div = document.createElement('div');
-        div.className = 'card';
+        div.className = 'card portfolio-card';
 
         // Create an img element
         var img = document.createElement('img');
@@ -30,13 +30,13 @@ function portfolioFiles(jsonPath, key) {
 
         // Create a h5 element
         var h5 = document.createElement('h5');
-        h5.className = 'card-title';
+        h5.className = 'card-title visually-hidden';
         h5.textContent = projects[i].title;
         a.appendChild(h5);
 
         // Create a p element
         var p = document.createElement('p');
-        p.className = 'card-text';
+        p.className = 'card-text visually-hidden';
         p.textContent = projects[i].description;
         a.appendChild(p);
 

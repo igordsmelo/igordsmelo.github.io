@@ -1,120 +1,357 @@
 :root{
-    --color1: hsl(0, 0%, 10%);
-    --color1b: hsl(0, 0%, 20%);
-    --color2: hsl(0, 0%, 90%);
-    --color2b: hsl(0, 0%, 85%);
-    --color3: red;
+    --black-base: hsl(0, 0%, 10%);
+    --black-base-50: hsla(0, 0%, 10%, 0.5);
+    --black-2: hsl(0, 0%, 25%);
+    --white-base: hsl(0, 0%, 90%);
+    --white-base-50: hsla(0, 0%, 90%, 0.5);
+    --white-2: hsl(0, 0%, 80%);
+    --accent-color: red;
+    --font-main: "Arial Rounded MT Bold", ArialRoundedMTBold;
+    --border-base-nocolor: .1em solid;
+    --border-base-radius: 2em;
+
+    /* Figma variables */
+    --Base-Black-Style: var(--black-base);
+    --Base-White-Style: var(var(--white-base));
 
     /*bootstrap variables*/
     --bs-black-rgb: 26,26,26;
-    --bs-body-bg: var(--color2);
-    --bs-btn-active-bg: var(--color1);
-    --bs-btn-hover-bg: var(--color2);
-    --bs-btn-hover-color: var(--color1);
-    --bs-gray-800: var(--color1);
-    --bs-light-bg-subtle: var(--color2b);
-    --bs-link-hover-color: var(--color3);
-    --bs-link-hover-color-rgb: var(--color1);    
-    --bs-link-color: var(--color2);
-    --bs-nav-link-color: var(--color2);
-    --bs-nav-pills-link-active-bg: var(--color3);
-    --bs-primary-rgb: var(--color1);
+    --bs-body-bg: var(--white-base);
+    --bs-body-font-weight: 600;
+    --bs-border-radius: var(--border-base-radius);
+    /* --bs-border-width: var(--border-base-nocolor); */
+    --bs-gray-800: var(--black-base);
+    --bs-light-bg-subtle: var(--white-2);
+    --bs-link-hover-color: var(--accent-color);
+    --bs-link-hover-color-rgb: var(--black-base);    
+    --bs-link-color: var(--white-base);
+    --bs-nav-link-color: var(--white-base);
+    --bs-nav-pills-link-active-bg: var(--accent-color);
+    --bs-primary-rgb: var(--black-base);
     --bs-white-rgb: 230, 230, 230;
+
+    /* CARDS */
+    --bs-card-title-color: var(--black-base);
+
+    /* BOOTSTRAP BUTTONS */
+    /* --bs-btn-color: #fff; */
+    --bs-btn-bg: var(--black-base);
+    --bs-btn-border-color: var(--black-base);
+    --bs-btn-hover-color: var(--white-base);
+    --bs-btn-hover-bg: var(--black-2);
+    /* when button is clicked */
+    --bs-btn-active-color: var(--white-base);
+    --bs-btn-active-bg: var(--black-base);
+    --bs-btn-active-border-color: var(--black-base);
+
+    /* when mouse is over button  */
+    --bs-btn-hover-border-color: var(--black-2);
+    /* when button is clicked */
+    /* END OF BOOTSTRAP BUTTONS */
+
+
 }
 
-/* icons */
+@font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: url('font/ArialRoundedMTBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+body{
+    align-items: center;
+    /*background: red;*/
+}
+
+/* SOCIAL MEDIA ICONS */
 .bi{
-    color: var(--color2);
+    color: var(--white-base);
     font-size: 1.7em;
-    margin: auto .5em auto .5em;
+    margin: auto .5em;
     max-height: 2em;
-    max-width: 2em;
+}
+    .bi-artstation{
+        fill: var(--white-base);
+        padding-top: .30em;
+        width: 1em;
+    }
+/* END OF SOCIAL MEDIA ICONS */
+
+/* button text formatting */
+.btn{
+    /* background-color: var(--Base-White-Style); */
+    border: var(--border-base-nocolor) var(--black-base);
+    border-radius: var(--border-base-radius);
+    color: var(--black-base);
+    font: 1.3em var(--font-main);
+    margin: auto .5em !important;
+    padding: .5em 1em;
 }
 
-.bi-artstation{
-    /* Apply styles to both <i> and <svg> elements */
-    fill: var(--color2); /* This will apply to SVGs */
-    height: 2em;
-    padding-top: .30em;
-    width: 1em;
-}
 
-.card{
-    border-radius: 1em;
-    max-width: 100%;
-    max-height: auto; /* inherits height from img */
-    margin: 0.5em; 
-    overflow: hidden; /* keeps border in check */
-    width: 30%;
-}
-
-/* HOVER EFFECT */
-.card .card-img{
-    transition: transform 0.2s ease;
-}
-
-/* HOVER EFFECT */
-.card:hover .card-img{
-    filter: blur(0.5em);
-    filter: brightness(90%);
-    transform: scale(1.1);
-    transition-duration: 0.2s;
-    
-}
-
-.card-title, .card-text, .open-project{
-    font-size:1.5em;
-    text-decoration: none;
-    transition: visibility 0s, opacity 0.5s linear;
-    visibility: hidden;
-}
-
-.card:hover .card-title, 
-.card:hover .card-text, 
-.card:hover .open-project {
-    /*visibility: visible; /* makes text visible */
-    opacity: 1;
-}
-
-.contact{
-    max-width: 120em;
-    min-width: 24em;
-    margin: auto 5em auto 5em;
-}
-
-.contact .presentation{
-    max-width: 60em;
-    min-width: 20em;
+.card-title{
+    font-size: 8vmin;
     text-align: left;
 }
 
-h1{
-    font-family: var(--font2);
-    font-size: 3.5em;
+/* CONTACT SECTION */
+.contact{
+    margin: auto 2em;
+}
+    .contact > div{
+        text-align: left;
+        padding: 2em;
+        /* others */
+        display: flex;
+        flex-wrap: wrap-reverse;
+        overflow: hidden ;
+    }
+    .contact p{
+        width: 24em;}
+    .contact img{
+        border-radius: 100%;
+        height: max-content;
+        width: max-content;
+    }
+/* END OF CONTACT SECTION */
+
+
+/* EFFECTS */
+.effect-fade{
+    -webkit-mask-image: linear-gradient(rgba(0,0,0,1), transparent 75%);
+    mask-image: linear-gradient(rgba(0,0,0,1), transparent 75%);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: top 90%, bottom;
 }
 
-h2{
-    font-size: 1.5em;
-    font-weight: 400;
+.effect-invert{
+    filter: invert(1);
+    mix-blend-mode: difference;
 }
 
-.nav-pills .nav-link.active{
-    background-color: var(--color2); /* removes pill thing */
-    border-radius: 0.2em;
-    color: var(--color1) !important;
-    font-weight: bold;
+/* END OF EFFECTS */
+
+
+/* FOOTER */
+footer{
+    margin-top: 2em;
+    padding-top: 2em;
+    overflow: hidden;
+}
+/* END OF FOOTER */
+
+
+/* TITLE SIZES */
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-main);
+    margin-bottom: .25em;
+    
+    /* line-height: 1em; */
+}
+    h1{font-size: 12em;}
+    h2{font-size: 8em;}
+    h3{font-size: 4em;}
+    p{font-size: 1em;}
+/* END OF TITLE SIZES */
+
+/* HEADER */
+#header{
+    /* padding: 20em 0; */
+    justify-content: center;
+    height: 100vh;
+    color: var(--white-2);
 }
 
-.text-secondary.active{
-    color: var(--color2) !important;
-    font-weight: bold;
+#header p{
+    font-size: 2em;
+}
+/* END OF HEADER */
+
+/* NAVBAR CODE */
+/*navbar div (not the navbar itself, its contained within #navbar)*/
+#navbar{
+    justify-content: center;
+    position: sticky;
+    /* code is clean until this point */
+}
+
+/* TODO: REDUCE OPACITY */
+/*navbar buttons round frame, the main thing, basically*/
+nav{
+    backdrop-filter: blur(.5em);
+    background-color: var(--white-base-50);
+    border: var(--border-base-nocolor) var(--white-base);
+    border-radius: var(--border-base-radius);
+    display: flex;
+    /* align-items: center; */
+    /* framing navbar, padding defines most of it, gap is just a little bit of spacing */
+    padding: .25em;
+    gap: .5em;
+}
+
+/*buttons inside navbar (home, portfolio, about, etc)*/
+/*home button is red due to .JS code*/
+nav > .nav-link{
+    background-color: transparent;
+    border-radius: var(--border-base-radius);
+    color: var(--black-2);
+    padding: .25em .75em;}
+
+/*when the button has been clicked*/
+nav > .nav-link.active{
+    /*color: var(--white-base);*/
+    /*background-color: var(--black-base-50);*/
+    background: transparent scroll;
+    /*background-color: transparent;*/
+    border: darkgray solid .1em;
+    backdrop-filter: blur(.5em);
+}
+/* END OF NAVBAR CODE */
+
+
+.portfolio-card{
+    border-radius: var(--border-base-radius);
+    margin: 0.5em; 
+    overflow: hidden;
+    width: 30em;
+}
+
+/* HOVER EFFECT */
+.portfolio-card .card-img{transition: transform 0.2s ease;}
+
+/* HOVER EFFECT */
+.portfolio-card:hover .card-img{
+    /*filter: blur(0.5em);*/
+    filter: brightness(90%);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
 
 /* fix masory alignment */
-.projects{ 
-    justify-content: space-around;
-    margin: auto 30% auto 5%;
+
+/* OWL CAROUSEL THINGS */
+.owl-dot{visibility: hidden;}
+
+.owl-item > .carousel-card{
+    align-items: end;
+    justify-content: end;
 }
+/* div containing carousel card image */
+.owl-item > .carousel-card > .carousel-card-image{
+    align-items: center;
+    border-radius: var(--border-base-radius);
+    display: flex;
+    height: 35em;
+    max-height:80vmin;
+    justify-content: center;
+    margin: 1em;
+    overflow: hidden;
+    width: 70em;
+    max-width: 90vw !important;
+}
+
+
+.owl-item > .carousel-card > .card-body{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+
+.owl-item .card-tools{
+    display: flex;
+    gap: 1.5em;
+    margin-left: 1em;
+    padding-left: .2em;
+}
+
+/* to help break the text in the right places */
+span{display: inline-block;}
+
+.text-border{
+    -webkit-text-stroke: .02em var(--black-base);
+    color: transparent;
+}
+
+.text-border > b{color: var(--black-base)}
+
+.text-muted {color: var(--black-2) !important;}
+
+/* TOOLS DISPLAYED AT CARDS  */
+.tools{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    max-width: 90vw;
+    justify-content: center;
+}
+
+.toolkit{
+    padding-top: 280px;
+    align-items: center;
+    width: fit-content;
+    /* bottom gradient */
+    /* background: radial-gradient(ellipse 290vw 180vh at bottom, var(--white-base, 1)  20%, var(--black-base), var(--black-base, 1) 70%); */
+    background: linear-gradient(to top, var(--white-base, 1)  10%, var(--black-base), var(--black-base, 1) 70%);
+}
+
+.toolkit > h2{
+    line-height: 1em;
+}
+
+#header, .contact, .tools-card, .tools-card.h2, .tools-card.div, .tools-card-others, .toolkit{
+    display: flex;
+    flex-direction: column;
+}
+
+.tools-card{
+    border: var(--border-base-nocolor) var(--black-2);
+    border-radius: var(--border-base-radius);
+    color: var(--white-base);
+    font-weight: bolder;
+    justify-content:space-between;
+    height: 90vmin;
+    max-height: 28em;
+    width: 24em;
+    max-width: 93vw;
+    margin: .5em;
+    padding: 2em;
+    
+    overflow: hidden;
+    /* blocks the text inside tools from wrapping */
+    white-space: nowrap;
+}
+
+.tools-card h3{
+    text-align: left;
+}
+
+.tools-card > ul{
+    text-align: right;
+    font: 2rem var(--font-main);
+    direction: rtl;
+    margin: 0;
+    padding-right: .4em;
+}
+
+.tools-card-others{
+    color: var(--white-base);
+    height: 40em;
+    width: 80%;
+    overflow: hidden;
+}
+
+/* other tools */
+.tools-card-others > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.5em;
+    gap: 2em;
+    line-height: .2em;
+}
+
 
 .unselectable {
     -khtml-user-select: none;
@@ -125,40 +362,79 @@ h2{
     user-select: none;
 }
 
-
+/* PHONE VARIABLES  */
+/* masonry and frame width, still needs fixes  */
 @media only screen and (max-width: 600px) {
-    .card {
+    .portfolio-card {
         width: 95%;
     }
     .projects{
-        width:90%;
+        width:93vw;
+    }
+    .owl-item > .carousel-card > .card-body{
+        display: block;
+    }
+    .owl-item > .carousel-card > .card-body > a{
+        display: flex;
+        justify-content: center;
+    }
+    h1{font-size: 12em;}
+    h2{font-size: 3.8em;}
+    p{font-size: .75em;}
+    .tools-card > ul{
+        font-size: 1.6rem;
+        line-height: 120%;
+    }
+    /* All projects sub buttons */
+    .btn{
+        font-size: .9em;
+    }
+    .contact{
+        display: flex;
+        align-items: center;
     }
 }
+/* END OF PHONE VARIABLES */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OTHERS */
 @media only screen and (min-width:600px) and (max-width: 1280px) {
-    .card {
+    .portfolio-card {
         width: 45%;
     }
     .projects{
-        width:90%;
+        width:93vw;
     }
 }
 
 @media only screen and (min-width:1280px) and (max-width: 1400px) {
-    .card {
-        width: 30%;
+    .portfolio-card {
+        width: 30vw;
     }
     .projects{
-        width:90%;
+        width:93vw;
     }
 }
 
 @media only screen and (min-width:1400px) {
-    .card {
+    .portfolio-card {
         max-width: 30em;
         min-width: 20em;
     }
     .projects{
-        width:90%;
+        width:93vw;
     }
 }
+
