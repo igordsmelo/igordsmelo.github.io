@@ -21,7 +21,7 @@
     </head>
 
     <body onload="masonry()" onclick="masonry()" onscroll="masonry()" onloadstart="masonry()" class="unselectable text-center">
-        <!-- Mastodon veritification -->
+        <!-- Mastodon verification -->
         <div class="visually-hidden"><a rel="me" href="https://mastodon.social/@igordsmelo">Mastodon</a></div>
 
     
@@ -46,64 +46,19 @@
         <!-- NAVBAR -->
         <div class="navbar fixed-top" id="navbar">
             <nav role="tablist">
-                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tabs-home" aria-selected="true">home</button>
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabs-art" aria-selected="false">portfolio</button>
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabs-contact" aria-selected="false">about</button>
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tabs-home" aria-selected="true">Home</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabs-art" aria-selected="false">Portfolio</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabs-contact" aria-selected="false">About</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabs-contact" aria-selected="false">Contact</button>
             </nav>
         </div>
         <!-- END OF NAVBAR -->
 
         
         
-        <!-- CAROUSEL START -->
-        <div class="owlcarousel">
-            <h2 class="text-border effect-invert"> Latest <b>works</b></h2>
-            <div class="owl-carousel owl-theme">
-                <!-- CAROUSEL ITEMS -->
-                <div class="carousel-card">
-                    <div class="carousel-card-image">
-                        <img src="data/img.jpg">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <h3 class="card-title">Coxinha</h3>
-                            <ul class="card-tools text-muted">
-                                <li>Blender</li>
-                                <li>CSP</li>
-                                <li>Character Design</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn">open full project</a>
-                    </div>
-                </div>
 
-                <div class="carousel-card">
-                    <div class="carousel-card-image">
-                        <img src="data/img2.jpg">
-                    </div>
-                    <div class="card-body">
-                        <div class="card-text">
-                            <h3 class="card-title">Pau de Queijo</h3>
-                            <ul class="card-tools text-muted">
-                                <li>Photoshop</li>
-                                <li>Lightroom</li>
-                                <li>Krita</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn">open full project</a>
-                    </div>
-                </div>
-                <!-- END OF CAROUSEL ITEMS -->
-            </div>
-        </div>
-        
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script/carousel.js"></script>
-        <!-- CAROUSEL END -->
 
-        <!-- START OF PROJECTS  -->
+        <!-- START OF "PROJECTS" TAB (portfolio.html)  -->
         <div class="tab-content" id="tabs-tabContent">
             <div class="tab-pane fade show active" id="tabs-home"></div>
             <div class="tab-pane fade" id="tabs-art"></div>
@@ -111,13 +66,13 @@
             <div class="tab-pane fade" id="tabs-dev"></div>
             <div class="tab-pane fade" id="tabs-contact"></div>
         </div>
-        <!-- END OF PROJECTS -->
+        <!-- END OF "PROJECTS" TAB -->
 
         <!-- START OF TOOLKIT -->
         <div class="bg-black toolkit">
-            <h2 class="text-border  effect-invert"> I can <b><span>help you</span></b> with:</h2>
+            <h2 class="text-border  effect-invert"> My <b><span>Skill</span></b>set</h2>
             <div class="tools">
-                <div class="tools-card">
+                <div class="card-tools">
                     <h3>Art</h3>
                     <ul>
                         <li>Character Design</li>
@@ -127,7 +82,7 @@
                         <li>3D Modeling</li>
                     </ul>
                 </div>
-                <div class="tools-card">
+                <div class="card-tools">
                     <h3>Design</h3>
                     <ul>
                         <li>Branding</li>
@@ -137,7 +92,7 @@
                         <li>Video-editing</li>
                     </ul>
                 </div>
-                <div class="tools-card">
+                <div class="card-tools">
                     <h3>Code</h3>
                     <ul>
                         <li>Automation</li>
@@ -148,7 +103,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="tools-card-others effect-fade">
+            <div class="card-tools-others effect-fade">
                 <h2>and more:</h2>
                 <!-- Skills, Tools and Frameworks -->
                 <ul>
@@ -198,48 +153,13 @@
         </div>
         <!-- END OF  TOOLKIT -->
 
-        <!-- START OF CONTACT INFO -->
-        <div class="contact">
-            <h2 class="text-border invert "><b>About</b> & <b>Contact</b></h2>
-            <div class="card bg-light-subtle">
-                <!-- Presentation and Profile picture -->
-                <!-- Profile picture -->
-                <img class="" src="data/profile.jpg" alt="Profile Picture">
-                <div>
-                    <!-- Mail Button -->
-                    <a href="mailto:contact@igordsmelo.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-                    <!-- Artstation Button -->
-                    <a href="https://www.artstation.com/igordoodles" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-artstation">
-                            <path d="m0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.142-1.289H9.419L21.598 22.54l1.92-3.325c.378-.637.482-.919.482-1.467zm-11.129-3.462L7.428 4.858l-5.444 9.428h10.887z"/>
-                        </svg></a>
-                    <!-- Behance, GitHub and LinkedIn Buttons -->
-                    <a href="https://www.behance.net/igordsmelo" target="_blank"><i class="bi bi-behance"></i></a>
-                    <a href="https://www.github.com/igordsmelo" target="_blank"><i class="bi bi-github"></i></a>
-                </div>
-                <div>
-                    <h3>About me</h3>
-                    <p>I've always been interested in technology from a very young age, dabbling with everything I could get my hands on, which first grew into an interest in Web Development/Design and then branched out to Hardware, Illustration, Graphic Design, 3D Modeling, Video Editing
-                    and other areas as years went by.<br>
-                    I'm passionate about languages, technology, open protocols, podcasts, folk culture and metal music.<br>
-                    I also like to run, read, learn languages and life drawing on my spare time.</p>
-                    <p>New connections are always welcome. If you'd like to get in touch, feel free to contact me:</p>
-                    <a href="https://www.duckduckgo.com" target="_blank" class="btn">resume</a>
-                    <a href="https://www.duckduckgo.com" target="_blank" class="btn">e-mail</a>
-                </div>
-                
-
-    
-            </div>
-        </div>
-        <!-- END OF CONTACT INFO -->
-
          <!-- footer -->
         <footer class="bg-black">
-            <h2 class="text-border  effect-invert">Thank <b>You</b></h2>
-            <p class="text-white">This website was built by me with HTML, CSS, JS, Bootstrap and coffee. <br></p>
+            <h2 class="text-border  effect-invert">20<b>24 ©</b></h2>
+            <p class="text-white">Igor d.S. Melo. <br></p>
         </footer>
     </body>
     
 
 </html>
+

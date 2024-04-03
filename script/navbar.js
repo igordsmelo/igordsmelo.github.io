@@ -25,9 +25,10 @@ window.onscroll = function() {
     }
 
     for (var i = 0; i < navlink.length; i++) {
-        navlink[i].style.backgroundColor = 'red';
+        // turns "home" button background red
+        // navlink[i].style.backgroundColor = 'red';
         navlink[i].style.textColor = 'red';
-        navlink[i].active.style.backgroundColor = 'red';
+        // navlink[i].active.style.backgroundColor = 'red';
     }
 
 

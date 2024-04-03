@@ -57,6 +57,70 @@
     src: url('font/ArialRoundedMTBold.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+
+
+/* ABOUT SECTION */
+
+
+.about{
+    justify-content: center;
+    display: flex;
+}
+    .about > div{
+        text-align: left;
+        padding: 2em;
+        margin: .5em;
+        /* others */
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    
+
+    /* the portion where I talk about myself */
+    .about .me{
+        width: 50em;
+        flex-wrap: wrap-reverse;
+    }
+
+    .about .me img{
+        border-radius: 100%;
+        height: max-content;
+        width: max-content;
+    }
+
+
+    .about > .contact{
+        /* width: 30em; */
+        height: min-content;
+    }
+
+    /* right to the "me" section */
+    .about > .others{
+        padding: 0;
+        width: 30em;
+    }
+        /* the individual cards inside it */
+        .about > .others > .contact{
+            margin-bottom: 1em;
+            background-color: red;
+            color: red;
+        }
+
+        .about > .others > div{
+            padding: 2em;
+        }
+        
+
+
+/* END OF ABOUT SECTION */
+
+
+
+
+
+
+
 body{
     align-items: center;
     /*background: red;*/
@@ -93,26 +157,7 @@ body{
     text-align: left;
 }
 
-/* CONTACT SECTION */
-.contact{
-    margin: auto 2em;
-}
-    .contact > div{
-        text-align: left;
-        padding: 2em;
-        /* others */
-        display: flex;
-        flex-wrap: wrap-reverse;
-        overflow: hidden ;
-    }
-    .contact p{
-        width: 24em;}
-    .contact img{
-        border-radius: 100%;
-        height: max-content;
-        width: max-content;
-    }
-/* END OF CONTACT SECTION */
+
 
 
 /* EFFECTS */
@@ -173,24 +218,39 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center;
     position: sticky;
     /* code is clean until this point */
+    /* margin: 0 35em;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    mix-blend-mode: difference;
+    backdrop-filter: blur(.5em); */
+    
 }
 
+/* targeting the sticky navbar alone */
+#navbar > nav{
+    padding: 0.4em 0.5em;
+}
+
+#navbar li.active{
+    list-style-type: circle;
+}
 /* TODO: REDUCE OPACITY */
 /*navbar buttons round frame, the main thing, basically*/
+/* seems to also affect the other navbars, so better not edit this directly. */
 nav{
     backdrop-filter: blur(.5em);
     background-color: var(--white-base-50);
-    border: var(--border-base-nocolor) var(--white-base);
+    /* border: var(--border-base-nocolor) var(--white-base); */
     border-radius: var(--border-base-radius);
     display: flex;
     /* align-items: center; */
     /* framing navbar, padding defines most of it, gap is just a little bit of spacing */
     padding: .25em;
     gap: .5em;
+    
 }
 
 /*buttons inside navbar (home, portfolio, about, etc)*/
-/*home button is red due to .JS code*/
+/*home button is red due to navbar.js code*/
 nav > .nav-link{
     background-color: transparent;
     border-radius: var(--border-base-radius);
@@ -203,7 +263,8 @@ nav > .nav-link.active{
     /*background-color: var(--black-base-50);*/
     background: transparent scroll;
     /*background-color: transparent;*/
-    border: darkgray solid .1em;
+    background-color: var(--white-base-50);
+    /* border: red solid .1em; */
     backdrop-filter: blur(.5em);
 }
 /* END OF NAVBAR CODE */
@@ -232,12 +293,12 @@ nav > .nav-link.active{
 /* OWL CAROUSEL THINGS */
 .owl-dot{visibility: hidden;}
 
-.owl-item > .carousel-card{
+.owl-item > .card-carousel{
     align-items: end;
     justify-content: end;
 }
 /* div containing carousel card image */
-.owl-item > .carousel-card > .carousel-card-image{
+.owl-item > .card-carousel > .card-carousel-image{
     align-items: center;
     border-radius: var(--border-base-radius);
     display: flex;
@@ -251,7 +312,7 @@ nav > .nav-link.active{
 }
 
 
-.owl-item > .carousel-card > .card-body{
+.owl-item > .card-carousel > .card-body{
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -267,6 +328,15 @@ nav > .nav-link.active{
 
 /* to help break the text in the right places */
 span{display: inline-block;}
+
+#tab-tab > .btn{
+    background-color: transparent;
+}
+#tab-tab > .btn.active{
+    background-color: var(--black-base);
+    border-color: var(--black-base)
+}
+
 
 .text-border{
     -webkit-text-stroke: .02em var(--black-base);
@@ -300,12 +370,12 @@ span{display: inline-block;}
     line-height: 1em;
 }
 
-#header, .contact, .tools-card, .tools-card.h2, .tools-card.div, .tools-card-others, .toolkit{
+#header, .contact, .card-tools, .card-tools.h2, .card-tools.div, .card-tools-others, .toolkit{
     display: flex;
     flex-direction: column;
 }
 
-.tools-card{
+.card-tools{
     border: var(--border-base-nocolor) var(--black-2);
     border-radius: var(--border-base-radius);
     color: var(--white-base);
@@ -323,11 +393,11 @@ span{display: inline-block;}
     white-space: nowrap;
 }
 
-.tools-card h3{
+.card-tools h3{
     text-align: left;
 }
 
-.tools-card > ul{
+.card-tools > ul{
     text-align: right;
     font: 2rem var(--font-main);
     direction: rtl;
@@ -335,7 +405,7 @@ span{display: inline-block;}
     padding-right: .4em;
 }
 
-.tools-card-others{
+.card-tools-others{
     color: var(--white-base);
     height: 40em;
     width: 80%;
@@ -343,7 +413,7 @@ span{display: inline-block;}
 }
 
 /* other tools */
-.tools-card-others > ul{
+.card-tools-others > ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -371,17 +441,17 @@ span{display: inline-block;}
     .projects{
         width:93vw;
     }
-    .owl-item > .carousel-card > .card-body{
+    .owl-item > .card-carousel > .card-body{
         display: block;
     }
-    .owl-item > .carousel-card > .card-body > a{
+    .owl-item > .card-carousel > .card-body > a{
         display: flex;
         justify-content: center;
     }
     h1{font-size: 12em;}
     h2{font-size: 3.8em;}
     p{font-size: .75em;}
-    .tools-card > ul{
+    .card-tools > ul{
         font-size: 1.6rem;
         line-height: 120%;
     }
