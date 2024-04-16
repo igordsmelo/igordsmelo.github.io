@@ -5,9 +5,6 @@ $(document).ready(function(){
     $("#tabs-art").load("pages/portfolio.html", function() {
       portfolioFiles("data/pages.json", 'art');
     });
-    $("#tabs-contact").load("pages/contact.html", function() {
-      portfolioFiles("data/pages.json", 'contact');
-    });
     $("#tabs-design").load("pages/portfolio.html", function() {
       portfolioFiles("data/pages.json", 'design');
     });
